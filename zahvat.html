@@ -1,0 +1,147 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+<head>
+	{{> head/head head.defaults}}
+</head>
+
+<body class="page">
+	%=symbols=%
+
+	<header class="header register">
+		<div class="wrapper">
+			<div class="header__items">
+				{{> header/header-left }}
+
+				<div class="zahvat__center">
+					<div class="zahvat__block">
+						<div class="zahvat__block-title">
+							<h1>
+								закрытый каталог
+								<b>квартир в аланьи.</b>
+								вернем вам от 3% <b>от суммы покупки</b>
+							</h1>
+						</div>
+						<div class="zahvat__block-text">
+							<div class="zahvat__block-item active">
+								<div class="zahvat__block-name">
+									<span class="line"></span>
+									<span class="plus">
+										<span class="plus-line"></span>
+										<span class="plus-line"></span>
+									</span>
+									3% кэшбек на все квартиры
+								</div>
+								<div class="zahvat__block-desc">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений.
+								</div>
+							</div>
+							<div class="zahvat__block-item">
+								<div class="zahvat__block-name">
+									<span class="line"></span>
+									<span class="plus">
+										<span class="plus-line"></span>
+										<span class="plus-line"></span>
+									</span>
+									топ-100 новостей аланьи
+								</div>
+								<div class="zahvat__block-desc">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений.
+								</div>
+							</div>
+							<div class="zahvat__block-item">
+								<div class="zahvat__block-name">
+									<span class="line"></span>
+									<span class="plus">
+										<span class="plus-line"></span>
+										<span class="plus-line"></span>
+									</span>
+									тур за недвижимостью
+								</div>
+								<div class="zahvat__block-desc">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений.
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="main__right">
+						<div class="right-play">
+							{{Icon iconName="play"}}
+						</div>
+						<p class="right-text">
+							Экскурсия по сайту за 2 минуты
+						</p>
+					</div>
+
+					<div class="register__scroll">
+						<div class="register__block">
+							<div class="register__block-title">
+								пройдите регистрацию и получите доступ в каталог
+							</div>
+							<div class="register__block-form">
+								<form action="">
+									<div class="form-block">
+										<input type="text" name="status" id="status" class="form-input" required>
+										<div class="linear"></div>
+										<span class="form-label">ваш статус</span>
+										<span class="form-arrow">{{Icon iconName="d-arr"}}</span>
+									</div>
+									<div class="status-variants">
+										<label class="status-label">
+											<input type="radio" value="Покупатель" class="status-variant">
+											<span>Покупатель</span>
+										</label>
+										<label class="status-label">
+											<input type="radio" value="Продавец" class="status-variant">
+											<span>Продавец</span>
+										</label>
+									</div>
+									<div class="form-block">
+										<input type="text" class="form-input" required>
+										<div class="linear"></div>
+										<span class="form-label">ваше имя</span>
+									</div>
+									<div class="form-block">
+										<input type="text" class="form-input" required>
+										<div class="linear"></div>
+										<span class="form-label">Номер телефона</span>
+									</div>
+									<div class="form-block">
+										<input type="text" class="form-input" required>
+										<div class="linear"></div>
+										<span class="form-label">e-mail</span>
+										<span class="form-span">ваш логин</span>
+									</div>
+									<div class="form-block">
+										<input type="text" class="form-input" required>
+										<div class="linear"></div>
+										<span class="form-label">Задайте пароль</span>
+										<span class="form-span">От 6 знаков</span>
+									</div>
+									<div class="form-bottom">
+										<button class="form-button">
+											{{Icon iconName="user"}}
+											Пригласить
+										</button>
+									</div>
+									<div class="form-accept">
+										<label class="form-accept-label">
+											<input type="checkbox" name="check" class="form-accept-check">
+											<div class="custom"></div>
+											<div>
+												Я принимаю <a href="#" class="form-accept-link">условия пользовательского соглашения</a> MIRADEN 
+											</div>
+										</label>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</header>
+
+	{{> bottom/bottom }}
+</body>
+
+</html>

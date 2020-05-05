@@ -1,0 +1,90 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+<head>
+	{{> head/head head.defaults}}
+</head>
+
+<body class="page">
+	%=symbols=%
+
+	<header class="header register">
+		<div class="wrapper">
+			<div class="header__items">
+				{{> header/header-left }}
+
+				<div class="register__center">
+					<div class="register__scroll">
+						<div class="register__block">
+							<div class="register__block-title">
+								пройдите регистрацию и получите доступ в каталог
+							</div>
+							<div class="register__block-form">
+								<form action="">
+									<div class="form-block">
+										<input type="text" name="status" id="status" class="form-input" required>
+										<div class="linear"></div>
+										<span class="form-label">ваш статус</span>
+										<span class="form-arrow">{{Icon iconName="d-arr"}}</span>
+									</div>
+									<div class="status-variants">
+										<label class="status-label">
+											<input type="radio" value="Покупатель" class="status-variant">
+											<span>Покупатель</span>
+										</label>
+										<label class="status-label">
+											<input type="radio" value="Продавец" class="status-variant">
+											<span>Продавец</span>
+										</label>
+									</div>
+									<div class="form-block">
+										<input type="text" class="form-input" required>
+										<div class="linear"></div>
+										<span class="form-label">ваше имя</span>
+									</div>
+									<div class="form-block">
+										<input type="text" class="form-input" required>
+										<div class="linear"></div>
+										<span class="form-label">Номер телефона</span>
+									</div>
+									<div class="form-block">
+										<input type="text" class="form-input" required>
+										<div class="linear"></div>
+										<span class="form-label">e-mail</span>
+										<span class="form-span">ваш логин</span>
+									</div>
+									<div class="form-block">
+										<input type="text" class="form-input" required>
+										<div class="linear"></div>
+										<span class="form-label">Задайте пароль</span>
+										<span class="form-span">От 6 знаков</span>
+									</div>
+									<div class="form-bottom">
+										<button class="form-button">
+											{{Icon iconName="user"}}
+											Пригласить
+										</button>
+									</div>
+									<div class="form-accept">
+										<label class="form-accept-label">
+											<input type="checkbox" name="check" class="form-accept-check">
+											<div class="custom"></div>
+											<div>
+												Я принимаю <a href="#" class="form-accept-link">условия пользовательского соглашения</a> MIRADEN 
+											</div>
+										</label>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</header>
+
+	{{> bottom/bottom }}
+</body>
+
+</html>

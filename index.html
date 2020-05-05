@@ -1,0 +1,426 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+<head>
+	{{> head/head head.defaults}}
+</head>
+
+<body class="page">
+	%=symbols=%
+
+	<header class="header">
+		<div class="wrapper">
+			<div class="header__items">
+				{{> header/header-left }}
+
+				<div class="center">
+
+					{{> header/header-center-top}} 
+
+					<div class="main__center">
+						<h1 class="main-caption" data-first="Закрытый каталог" data-second="Эксклюзивной" data-third="Недвижимости">
+							<span id="first"></span>
+						</h1>
+						<p class="main-desc">
+							Мы собрали эксклюзивные объекты 
+							из топ-20 стран Мира и устроили 
+							онлайн торги. Пройдите бесплатную регистрацию и получите доступ 
+							к закрытому каталогу MIRADEN.
+						</p>
+						<div class="main-reg">
+							<span class="user-svg">
+								{{Icon iconName="user"}}
+							</span>
+							Регистрация
+							<span class="arr-svg">
+								{{Icon iconName="n-arr"}}
+							</span>
+						</div>
+						<img src="%=static=%img/general/main-bg.png" class="main-img" alt="main">
+					</div>
+
+					<section class="advantage">
+						<div class="advantage__content">
+							<div class="swiper-container advantage-container">
+								<div class="swiper-wrapper advantage-wrapper">
+									<div class="swiper-slide advantage__item">
+										<span class="advantage__item-value">418</span>
+										<div class="advantage__item-title">Эксклюзивных объектов</div>
+										<span class="line"></span>
+										<p class="advantage__item-desc">В закрытом каталоге собрана эксклюзивная недвижимость из разных стран Мира.</p>
+										<p class="advantage__item-desc">Наши объекы не найим в интернете или у других агенств. Исключением являются только жилые комплексы.</p>
+									</div>
+									<div class="swiper-slide advantage__item">
+										<span class="advantage__item-value">3%</span>
+										<div class="advantage__item-title">CashBack на все квартиры</div>
+										<span class="line"></span>
+										<p class="advantage__item-desc">Вы гарантированно получите возврат в 3% от суммы покупки. Не зависимо от скидки самого застройщика.</p>
+										<p class="advantage__item-desc">Достаточно оформить заявку через каталог MIRADEN до совершения сделки.</p>
+										<a href="#" class="advantage__item-link">подробнее...</a>
+									</div>
+									<div class="swiper-slide advantage__item">
+										<span class="advantage__item-value">14</span>
+										<div class="advantage__item-title">Офисов наших представителей</div>
+										<span class="line"></span>
+										<p class="advantage__item-desc">Офисы представителей MIRADEN находятся в СНГ, Европе, Азии и США.</p>
+										<p class="advantage__item-desc">Наши представители всегда готовы встретить вас и решить любые задачи на рынке недвижимости.</p>
+									</div>
+								</div>
+
+								<div class="nav-btn nav-btn-next">
+									{{Icon iconName="arr"}}
+								</div>
+								<div class="nav-btn nav-btn-prev">
+									{{Icon iconName="arr"}}
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="opportunities">
+						<div class="opportunities__content">
+
+							<div class="vertical-line"></div>
+
+							<div class="opportunities__select">
+								<form action="">
+									<div class="sort">
+										<select name="" id="" class="sort-select">
+											<option value="1">для покупателя</option>
+											<option value="2">для продавца</option>
+										</select>
+									</div>
+								</form>
+							</div>
+
+							<div class="opportunities__title">
+								<h3>Возможности каталога Miraden</h3>
+							</div>
+
+							<div class="opportunities__items">
+
+								<div class="opportunities__item">
+									<div class="opportunities__item-info">
+										<h4 class="opportunities__item-title">CashBack на все квартиры</h4>
+										<div class="line"></div>
+										<p class="opportunities__item-desc">Вы гарантированно получите возврат в 3% от суммы покупки. Не зависимо от скидки самого застройщика.</p>
+										<p class="opportunities__item-desc">Достаточно оформить заявку через каталог MIRADEN до совершения сделки. Вы получите возврат в 3% от суммы покупки. Не зависимо от скидки самого застройщика. </p>
+										<a href="#" class="opportunities__item-link">подробнее...</a>
+									</div>
+									<div class="opportunities__item-image">
+										<img src="%=static=%img/general/image.png" alt="image">
+									</div>
+								</div>
+
+								<div class="opportunities__item">
+									<div class="opportunities__item-image">
+										<img src="%=static=%img/general/image.png" alt="image">
+									</div>
+									<div class="opportunities__item-info">
+										<h4 class="opportunities__item-title">Эксклюзивных объектов</h4>
+										<div class="line"></div>
+										<p class="opportunities__item-desc">В закрытом каталоге собрана эксклюзивная недвижимость из разных стран Мира.</p>
+										<p class="opportunities__item-desc">Наши объекы не найим в интернете или у других агенств. Исключением являются только жилые комплексы. В закрытом каталоге собрана эксклюзивная недвижимость из разных стран Мира.</p>
+									</div>
+								</div>
+
+								<div class="opportunities__item">
+									<div class="opportunities__item-info">
+										<h4 class="opportunities__item-title">Офисов наших представителей</h4>
+										<div class="line"></div>
+										<p class="opportunities__item-desc">Офисы представителей MIRADEN находятся в СНГ, Европе, Азии и США.</p>
+										<p class="opportunities__item-desc">Наши представители всегда готовы встретить вас и решить любые задачи на рынке недвижимости. Офисы представителей MIRADEN находятся в СНГ, Европе, Азии и США.Офисы представителей MIRADEN.</p>
+									</div>
+									<div class="opportunities__item-image">
+										<img src="%=static=%img/general/image.png" alt="image">
+									</div>
+								</div>
+
+								<div class="opportunities__item">
+									<div class="opportunities__item-image">
+										<img src="%=static=%img/general/image.png" alt="image">
+									</div>
+									<div class="opportunities__item-info">
+										<h4 class="opportunities__item-title">CashBack на все квартиры</h4>
+										<div class="line"></div>
+										<p class="opportunities__item-desc">Вы гарантированно получите возврат в 3% от суммы покупки. Не зависимо от скидки самого застройщика.</p>
+										<p class="opportunities__item-desc">Достаточно оформить заявку через каталог MIRADEN до совершения сделки. Вы получите возврат в 3% от суммы покупки. Не зависимо от скидки самого застройщика. </p>
+										<a href="#" class="opportunities__item-link">подробнее...</a>
+									</div>
+								</div>
+
+								<div class="opportunities__item">
+									<div class="opportunities__item-info">
+										<h4 class="opportunities__item-title">Эксклюзивных объектов</h4>
+										<div class="line"></div>
+										<p class="opportunities__item-desc">В закрытом каталоге собрана эксклюзивная недвижимость из разных стран Мира.</p>
+										<p class="opportunities__item-desc">Наши объекы не найим в интернете или у других агенств. Исключением являются только жилые комплексы. В закрытом каталоге собрана эксклюзивная недвижимость из разных стран Мира.</p>
+									</div>
+									<div class="opportunities__item-image">
+										<img src="%=static=%img/general/image.png" alt="image">
+									</div>
+								</div>
+
+							</div>
+
+							<div class="opportunities__register">
+								<div class="reg">
+									{{Icon iconName="user"}}
+									Регистрация
+								</div>
+							</div>
+
+						</div>
+					</section>
+
+					<section class="last">
+						<div class="last__content">
+
+							<div class="vertical-line"></div>
+
+							<div class="last__select">
+								<form action="">
+									<div class="sort">
+										<a href="#" class="sorted-link">по цене {{Icon iconName="d-arr"}}</a>
+									</div>
+								</form>
+								<form action="">
+									<div class="sort">
+										<a href="#" class="sorted-link">по дате {{Icon iconName="d-arr"}}</a>
+									</div>
+								</form>
+							</div>
+
+							<div class="last__title">
+								<h3>Последние предложения</h3>
+							</div>
+
+							<div class="last__items">
+
+								{{> card/card }}
+								{{> card/special-card }}
+								{{> card/card }}
+								{{> card/card }}
+								{{> card/card }}
+
+							</div>
+
+							<div class="last__more">
+								<p>Открыть ещё <span>118 объектов</span></p>
+							</div>
+
+							<div class="last__open">
+								<div class="circle">
+									{{Icon iconName="n-arr"}}
+								</div>
+							</div>
+
+						</div>
+					</section>
+
+					<section class="hot">
+						<div class="hot__content">
+
+							<div class="vertical-line"></div>
+
+							<div class="hot__select">
+								<form action="">
+									<div class="sort">
+										<a href="#" class="sorted-link">по цене {{Icon iconName="d-arr"}}</a>
+									</div>
+								</form>
+								<form action="">
+									<div class="sort">
+										<a href="#" class="sorted-link">по дате {{Icon iconName="d-arr"}}</a>
+									</div>
+								</form>
+							</div>
+
+							<div class="hot__title">
+								<h3>Горячие предложения</h3>
+							</div>
+
+							<div class="hot__items">
+
+								{{> card/card }}
+								{{> card/special-card }}
+								{{> card/card }}
+								{{> card/card }}
+								{{> card/card }}
+
+							</div>
+
+							<div class="hot__more">
+								<p>Открыть ещё <span>118 объектов</span></p>
+							</div>
+
+							<div class="hot__open">
+								<div class="circle">
+									{{Icon iconName="n-arr"}}
+								</div>
+							</div>
+
+						</div>
+					</section>
+
+					<section class="popular">
+						<div class="popular__content">
+							<div class="vertical-line"></div>
+
+							<div class="popular__title">
+								<h3>Популярные страны</h3>
+							</div>
+
+							<div class="popular__countries">
+								<div class="popular__countries-col">
+									<div class="country">
+										<img src="%=static=%img/general/countries/austria.svg" alt="Страна">
+										<p>Австрия</p>
+										<span>322</span>
+									</div>
+									<div class="country">
+										<img src="%=static=%img/general/countries/uk.svg" alt="Страна">
+										<p>Великобритания</p>
+										<span>326</span>
+									</div>
+									<div class="country">
+										<img src="%=static=%img/general/countries/hungary.svg" alt="Страна">
+										<p>Венгрия</p>
+										<span>2 103</span>
+									</div>
+									<div class="country">
+										<img src="%=static=%img/general/countries/vietnam.svg" alt="Страна">
+										<p>Вьетнам</p>
+										<span>162</span>
+									</div>
+									<div class="country">
+										<img src="%=static=%img/general/countries/germany.svg" alt="Страна">
+										<p>Германия</p>
+										<span>2 540</span>
+									</div>
+									<div class="country">
+										<img src="%=static=%img/general/countries/latvia.svg" alt="Страна">
+										<p>Латвия</p>
+										<span>3 744</span>
+									</div>
+									<div class="country">
+										<img src="%=static=%img/general/countries/emirates.svg" alt="Страна">
+										<p>ОАЭ</p>
+										<span>834</span>
+									</div>
+									<div class="country">
+										<img src="%=static=%img/general/countries/portugal.svg" alt="Страна">
+										<p>Португалия</p>
+										<span>2 200</span>
+									</div>
+								</div>
+								<div class="popular__countries-col">
+									<div class="country">
+										<img src="%=static=%img/general/countries/greece.svg" alt="Страна">
+										<p>Греция</p>
+										<span>4 721</span>
+									</div>
+									<div class="country">
+										<img src="%=static=%img/general/countries/israel.svg" alt="Страна">
+										<p>Израиль</p>
+										<span>319</span>
+									</div>
+									<div class="country">
+										<img src="%=static=%img/general/countries/spain.svg" alt="Страна">
+										<p>Испания</p>
+										<span>20 155</span>
+									</div>
+									<div class="country">
+										<img src="%=static=%img/general/countries/italy.svg" alt="Страна">
+										<p>Италия</p>
+										<span>3 300</span>
+									</div>
+									<div class="country">
+										<img src="%=static=%img/general/countries/cyprus.svg" alt="Страна">
+										<p>Кипр</p>
+										<span>5  681</span>
+									</div>
+									<div class="country">
+										<img src="%=static=%img/general/countries/finland.svg" alt="Страна">
+										<p>Финляндия</p>
+										<span>9</span>
+									</div>
+									<div class="country">
+										<img src="%=static=%img/general/countries/france.svg" alt="Страна">
+										<p>Франция</p>
+										<span>4 246</span>
+									</div>
+									<div class="country">
+										<img src="%=static=%img/general/countries/croatia.svg" alt="Страна">
+										<p>Хорватия</p>
+										<span>1 028</span>
+									</div>
+								</div>
+								<div class="popular__countries-col">
+									<div class="country">
+										<img src="%=static=%img/general/countries/germany.svg" alt="Страна">
+										<p>Германия</p>
+										<span>2 540</span>
+									</div>
+									<div class="country">
+										<img src="%=static=%img/general/countries/latvia.svg" alt="Страна">
+										<p>Латвия</p>
+										<span>3 744</span>
+									</div>
+									<div class="country">
+										<img src="%=static=%img/general/countries/emirates.svg" alt="Страна">
+										<p>ОАЭ</p>
+										<span>834</span>
+									</div>
+									<div class="country">
+										<img src="%=static=%img/general/countries/portugal.svg" alt="Страна">
+										<p>Португалия</p>
+										<span>2 200</span>
+									</div>
+									<div class="country">
+										<img src="%=static=%img/general/countries/usa.svg" alt="Страна">
+										<p>США</p>
+										<span>8 654</span>
+									</div>
+									<div class="country">
+										<img src="%=static=%img/general/countries/thailand.svg" alt="Страна">
+										<p>Таиланд</p>
+										<span>3 042</span>
+									</div>
+
+									<a href="#" class="all-countries">Все страны</a>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<footer class="footer">
+						<div class="wrapper">
+							<div class="footer__items">
+								{{> footer/footer-center}}
+							</div>
+						</div>
+					</footer>
+					
+				</div>
+
+				{{> header/header-right }}
+			</div>
+		</div>
+	</header>
+
+	<!-- <div class="only-logo">
+		<div class="wrapper">
+			<div class="only-logo-wrap">
+				<img src="%=static=%img/general/logo.png" alt="Логотип">
+			</div>
+		</div>
+	</div>
+-->
+
+
+{{> bottom/bottom }}
+
+</body>
+
+</html>

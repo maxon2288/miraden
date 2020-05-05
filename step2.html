@@ -1,0 +1,581 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+<head>
+	{{> head/head head.defaults}}
+</head>
+
+<body class="page">
+	%=symbols=%
+
+	<header class="header">
+		<div class="wrapper">
+			<div class="header__items">
+				{{> header/header-left }}
+
+				<div class="center">
+
+					{{> header/header-center-advert }}
+
+					<div class="step__add-header">
+						<ul class="tab-lists">
+							<li class="tab-list-item">Основные данные</li>
+							<li class="tab-list-item active">Параметры</li>
+							<li class="tab-list-item">Преимущества</li>
+							<li class="tab-list-item">Планировки</li>
+							<li class="tab-list-item">Видео</li>
+							<li class="tab-list-item">Детали покупки</li>
+						</ul>
+					</div>
+
+					<form action="" class="step__add-form">
+						
+						<div class="step__add-item">
+							<div class="step__body-title">Параметры:</div>
+
+							<div class="step__add-block">
+
+								<div class="step__add-field">
+									<input type="text" class="input-field" maxlength="80" required>
+									<span class="input-title">Название объекта
+										<span class="star">*</span>
+									</span>
+									<span class="input-value">80 символов</span>
+								</div>
+
+
+								<div class="step__add-row">
+									<div class="step__add-field step__add-flex mr-11">
+										<input type="text" class="input-field" maxlength="80" required>
+										<span class="input-title">Год постройки
+											<span class="star">*</span>
+										</span>
+										
+										<div class="step__add-select">
+											<select class="select new-select">
+												<option value="1">一</option>
+												<option value="2">01</option>
+												<option value="3">02</option>
+												<option value="3">03</option>
+												<option value="3">04</option>
+												<option value="3">05</option>
+												<option value="3">06</option>
+												<option value="3">07</option>
+												<option value="3">08</option>
+												<option value="3">09</option>
+												<option value="3">10</option>
+												<option value="3">11</option>
+												<option value="3">12</option>
+											</select>
+										</div>
+									</div>
+									<div class="step__add-field step__add-flex mr-11">
+										<input type="text" class="input-field" maxlength="80" required>
+										<span class="input-title">Цена объекта
+											<span class="star">*</span>
+										</span>
+
+										<div class="step__add-select">
+											<select class="select new-select">
+												<option value="1">€</option>
+												<option value="2">$</option>
+												<option value="3">₽</option>
+												<option value="3">£</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="step-select">
+										<span class="tr-span">cashback покупателю 
+											<span class="state-star">*</span>
+										</span>
+										<select class="select-step new-select">
+											<option value="1" disabled="true">2 %</option>
+											<option value="2" disabled="true">3% </option>
+											<option value="3" disabled="true">4%</option>
+											<option value="3" disabled="true">5%</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="step__add-wrapper">
+									<div class="step-select mr-11">
+										<span class="tr-span">Комиссия miraden
+											<span class="state-star">*</span>
+										</span>
+										<select class="select-step new-select">
+											<option value="1" disabled="true">2%</option>
+											<option value="2" disabled="true">3%</option>
+											<option value="3" disabled="true">4%</option>
+											<option value="3" disabled="true">5%</option>
+											<option value="3" disabled="true">6%</option>
+											<option value="3" disabled="true">7%</option>
+											<option value="3" disabled="true">8%</option>
+											<option value="3" disabled="true">9%</option>
+											<option value="3" disabled="true">10%</option>
+										</select>
+									</div>
+									<div class="header__center-item full-item">
+										<span class="item-svg">
+											{{Icon iconName="d-arr"}}
+										</span>
+										<input type="text" class="custom-input" id="ned-input" readonly required>
+										<span class="custom-input-title">С гарантией</span>
+										<div class="search-variants">
+											<div class="search-variants--wrap">
+												<div class="search-variants-items">
+													<label>
+														<input type="radio" value="1%" class="ned-input">
+														<span>1%</span>
+													</label>
+													<label>
+														<input type="radio" value="2%" class="ned-input">
+														<span>2%</span>
+													</label>
+													<label>
+														<input type="radio" value="3%" class="ned-input">
+														<span>3%</span>
+													</label>
+													<label>
+														<input type="radio" value="4%" class="ned-input">
+														<span>4%</span>
+													</label>
+													<label>
+														<input type="radio" value="5%" class="ned-input">
+														<span>5%</span>
+													</label>
+													<label>
+														<input type="radio" value="6%" class="ned-input">
+														<span>6%</span>
+													</label>
+													<label>
+														<input type="radio" value="7%" class="ned-input">
+														<span>7%</span>
+													</label>
+													<label>
+														<input type="radio" value="8%" class="ned-input">
+														<span>8%</span>
+													</label>
+													<label>
+														<input type="radio" value="9%" class="ned-input">
+														<span>9%</span>
+													</label>
+													<label>
+														<input type="radio" value="10%" class="ned-input">
+														<span>10%</span>
+													</label>
+												</div>
+												<div class="search-variants-items">
+													<!-- <label class="ned-label">
+														<input type="checkbox" name="check" value="С гарантией" class="ned-check" checked>
+														<div class="custom"></div>
+														С гарантией
+													</label> -->
+													<label class="territory-label">
+														<input type="checkbox" class="territory-input">
+														<span class="custom">
+															{{Icon iconName="true"}}
+														</span>
+														<span class="text">С гарантией</span>
+			
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="step__add-item mt-2">
+							<div class="step__body-title">адрес:</div>
+
+							<div class="step__add-block">
+
+								<div class="step__add-row">
+									<div class="step-select mb-10 mr-3n">
+										<span class="tr-span">Страна 
+											<span class="state-star">*</span>
+										</span>
+										<select class="select-step new-select">
+											<option value="1" disabled="true">Австрия</option>
+											<option value="1" disabled="true">Германия</option>
+											<option value="1" disabled="true">Греция</option>
+											<option value="1" disabled="true">Испания</option>
+											<option value="1" disabled="true">Италия</option>
+											<option value="1" disabled="true">Кипр</option>
+											<option value="1" disabled="true">Франция</option>
+											<option value="1" disabled="true">Австралия</option>
+											<option value="1" disabled="true">Болгария</option>
+											<option value="1" disabled="true">Великобритания</option>
+											<option value="1" disabled="true">Все страны</option>
+										</select>
+									</div>
+									<div class="step__add-field step__add-flex  mr-11">
+										<input type="text" class="input-field" maxlength="80" required>
+										<span class="input-title">Город
+											<span class="star">*</span>
+										</span>
+									</div>
+									<div class="inputs-row mb-10">
+										<div class="step__add-field step__add-flex mr-4">
+											<input type="text" class="input-field" maxlength="80" required>
+											<span class="input-title">Улица
+											</span>
+										</div>
+
+										<div class="step__add-field step__add-flex step__add-house">
+											<input type="text" class="input-field" maxlength="80" required>
+											<span class="input-title">Дом
+											</span>
+										</div>
+									</div>
+
+								</div>
+
+								<div class="step__add-wrapper">
+									<div class="step__add-field step__add-flex step__add-house">
+										<input type="text" class="input-field" maxlength="80" required>
+										<span class="input-title">Широта
+											<span class="star">*</span>
+										</span>
+									</div>
+									<div class="step__add-field step__add-flex step__add-house">
+										<input type="text" class="input-field" maxlength="80" required>
+										<span class="input-title">Долгота
+											<span class="star">*</span>
+										</span>
+										<div class="schedule">
+											{{Icon iconName="place"}}
+											
+										</div>
+									</div>
+
+									<div class="show-radius">
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="text">Показать радиус</span>
+
+										</label>
+									</div>
+								</div>
+
+								<div class="map schedule-map" data-lat="36.508767" data-lng="-4.993866" data-zoom="15" data-title="Название объекта" data-icon="static/img/general/marker.svg" data-address="Адрес" data-city="Греция, Сокольники" data-phone="+77755421169" >
+									<div id="map"></div>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="step__add-item mt-2">
+							<div class="step__body-title">Площади:</div>
+							<div class="step__add-block">
+								<div class="step__add-wrapper">
+									<div class="step__add-fields step__add-areas">
+										<div class="step__add-field">
+											<input type="text" class="input-field"  required>
+											<span class="input-title ">Общая (m²)
+												<span class="star">*</span>
+											</span>
+										</div>
+										<div class="step__add-field">
+											<input type="text" class="input-field " required>
+											<span class="input-title ">Жилая (m²)
+												<span class="star">*</span>
+											</span>
+										</div>
+										<div class="step__add-field">
+											<input type="text" class="input-field" maxlength="80" required>
+											<span class="input-title">Территория (m²)</span>
+										</div>
+										<div class="step__add-field">
+											<input type="text" class="input-field" maxlength="80" required>
+											<span class="input-title">Гостинная (m²)</span>
+										</div>
+										<div class="step__add-field">
+											<input type="text" class="input-field" maxlength="80" required>
+											<span class="input-title">Кухня (m²)</span>
+										</div>
+										<div class="step__add-field">
+											<input type="text" class="input-field" maxlength="80" required>
+											<span class="input-title">Терасса (m²)</span>
+										</div>
+										<div class="step__add-field">
+											<input type="text" class="input-field" maxlength="80" required>
+											<span class="input-title">Балкон (m²)</span>
+										</div>
+										<div class="step__add-field">
+											<input type="text" class="input-field" maxlength="80" required>
+											<span class="input-title">Бассейн (m²)</span>
+										</div>
+										<div class="step__add-field">
+											<input type="text" class="input-field" maxlength="80" required>
+											<span class="input-title">Цокольный этаж (m²)</span>
+										</div>
+										<div class="step__add-field">
+											<input type="text" class="input-field" maxlength="80" required>
+											<span class="input-title">гараж / машиноместо (m²)</span>
+										</div>
+										<div class="step__add-field">
+											<input type="text" class="input-field" maxlength="80" required>
+											<span class="input-title">высота потолков (m)</span>
+										</div>
+
+										<div class="add__field add__area">
+											Добавить
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="step__add-item mt-2">
+							<div class="step__body-title">Технические характеристики:</div>
+							<div class="step__add-wrapper mt-2">
+								<div class="step__add-fields step__add-tech">
+									<div class="step-select mb-10 mr-3n">
+										<span class="tr-span">Всего комнат 
+											<span class="state-star">*</span>
+										</span>
+										<select class="select-step new-select">
+											<option value="1" disabled="true">1</option>
+											<option value="2" disabled="true">2</option>
+											<option value="3" disabled="true">3</option>
+											<option value="3" disabled="true">4</option>
+											<option value="3" disabled="true">5</option>
+										</select>
+									</div>
+									<div class="step-select mb-10 mr-3n">
+										<span class="tr-span">Спальня 
+											<span class="state-star">*</span>
+										</span>
+										<select class="select-step new-select">
+											<option value="1" disabled="true">1</option>
+											<option value="2" disabled="true">2</option>
+											<option value="3" disabled="true">3</option>
+											<option value="3" disabled="true">4</option>
+											<option value="3" disabled="true">5</option>
+										</select>
+									</div>
+									<div class="step-select mb-10 mr-3n">
+										<span class="tr-span">Ванная комната 
+											<span class="state-star">*</span>
+										</span>
+										<select class="select-step new-select">
+											<option value="1" disabled="true">1</option>
+											<option value="2" disabled="true">2</option>
+											<option value="3" disabled="true">3</option>
+											<option value="3" disabled="true">4</option>
+											<option value="3" disabled="true">5</option>
+										</select>
+									</div>
+									<div class="step-select mb-10 mr-3n">
+										<span class="tr-span">Кухня 
+										</span>
+										<select class="select-step new-select">
+											<option value="1" disabled="true">1</option>
+											<option value="2" disabled="true">2</option>
+											<option value="3" disabled="true">3</option>
+											<option value="3" disabled="true">4</option>
+											<option value="3" disabled="true">5</option>
+										</select>
+									</div>
+									<div class="step-select mb-10 mr-3n">
+										<span class="tr-span">Гостинная 
+										</span>
+										<select class="select-step new-select">
+											<option value="1" disabled="true">1</option>
+											<option value="2" disabled="true">2</option>
+											<option value="3" disabled="true">3</option>
+											<option value="3" disabled="true">4</option>
+											<option value="3" disabled="true">5</option>
+										</select>
+									</div>
+									<div class="step-select mb-10 mr-3n">
+										<span class="tr-span">Балкон 
+										</span>
+										<select class="select-step new-select">
+											<option value="1" disabled="true">1</option>
+											<option value="2" disabled="true">2</option>
+											<option value="3" disabled="true">3</option>
+											<option value="3" disabled="true">4</option>
+											<option value="3" disabled="true">5</option>
+										</select>
+									</div>
+									<div class="step-select mb-10 mr-3n">
+										<span class="tr-span">Этажность 
+											<span class="state-star">*</span>
+										</span>
+										<select class="select-step new-select">
+											<option value="1" disabled="true">1</option>
+											<option value="2" disabled="true">2</option>
+											<option value="3" disabled="true">3</option>
+											<option value="3" disabled="true">4</option>
+											<option value="3" disabled="true">5</option>
+										</select>
+									</div>
+									<div class="step-select mb-10 mr-3n">
+										<span class="tr-span">Этаж 
+										</span>
+										<select class="select-step new-select">
+											<option value="1" disabled="true">1</option>
+											<option value="2" disabled="true">2</option>
+											<option value="3" disabled="true">3</option>
+											<option value="3" disabled="true">4</option>
+											<option value="3" disabled="true">5</option>
+										</select>
+									</div>
+									<div class="add__field add__tech">
+										Добавить
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="added--form added--area">
+							<span>Введите название:</span>
+							<input type="text" class="added--input added--input-area">
+							<div class="added--btn added--btn-area">Применить</div>
+						</div>
+
+						<div class="added--form added--tech">
+							<span>Введите название:</span>
+							<input type="text" class="added--input added--input-tech">
+							<div class="added--btn added--btn-tech">Применить</div>
+						</div>
+
+						<div class="step__add-item mt-2">
+							<div class="step__body-title">описание:</div>
+							<div class="step__add-field mt-2">
+								<textarea class="textarea-field" maxlength="1500" required></textarea>
+								<span class="textarea-title">Художественное описание объекта</span>
+								<span class="textarea-value">
+									<span class="symbols-value">0</span> / 
+									1500 символов
+								</span>
+							</div>
+						</div>	
+
+						<div class="step__add-item mt-2">
+							<div class="step__body-title">ФОТОГРАФИИ ОБЪЕКТА:
+								<span class="star">*</span>
+
+							</div>
+							<div class="step__add-files">
+								<label>
+									<input type="file" name="files[]" id="files" accept="image/jpeg,image/png" multiple>
+									{{Icon iconName="upload"}}
+									загрузить файлы
+								</label>
+
+								<div class="files__params">
+									<div>от 3 до 50 изображений</div>
+									<div>размер 1920 x 1080</div>
+									<div>до 200 kb</div>
+									<div>jpg / png</div>
+								</div>
+							</div>
+
+							<div class="step__add-loader">
+								<div class="step__add-wrap">
+									<div class="upload-btn upload-btn-prev">
+										{{Icon iconName="arr"}}
+									</div>
+									<div class="swiper-container step__add-uploads">
+										<div class="swiper-wrapper" id="uploaded-files">
+
+										</div>
+									</div>
+									<div class="upload-btn upload-btn-next">
+										{{Icon iconName="arr"}}
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="terms-submit">
+							<div class="terms-submit-check">
+
+							</div>
+							<div class="terms-submit-row">
+								<div class="step-pag">
+									<span class="step-page">2</span>
+									/
+									<span class="step-value">6 шагов</span>
+								</div>
+								<button data-src="/step3.html" class="step-btn">
+									Далее
+									{{Icon iconName="n-arr"}}
+								</button>
+							</div>
+						</div>
+
+
+					</form>
+
+					<!-- <div class="terms">
+						<p class="terms-text">Правила публикации остальные блоки из списка ниже заполняет администратор сайта, такие как:
+							О стране / городе, Похожие предложения, Галерея фильмов, Контакты продавца
+						</p>
+
+						<ol class="number-lists">
+							<li class="number-lists-item">Выбор рубрики</li>
+							<p class="terms-text number-lists-text">Правила публикации остальные блоки из списка ниже заполняет администратор сайта, такие как:
+								О стране / городе, Похожие предложения, Галерея фильмов, Контакты продавца
+							</p>
+							<p class="terms-text number-lists-text">Правила публикации остальные блоки из списка ниже заполняет администратор сайта, такие как:
+								О стране / городе, Похожие предложения, Галерея фильмов, Контакты продавца
+							</p>
+							<p class="terms-text number-lists-text">Правила публикации остальные блоки из списка ниже заполняет администратор сайта, такие как:
+								О стране / городе, Похожие предложения, Галерея фильмов, Контакты продавца
+							</p>
+							<li class="number-lists-item">Выбор рубрики</li>
+							<p class="terms-text number-lists-text">Правила публикации остальные блоки из списка ниже заполняет администратор сайта, такие как:
+								О стране / городе, Похожие предложения, Галерея фильмов, Контакты продавца
+							</p>
+							<p class="terms-text number-lists-text">Правила публикации остальные блоки из списка ниже заполняет администратор сайта, такие как:
+								О стране / городе, Похожие предложения, Галерея фильмов, Контакты продавца
+							</p>
+							<p class="terms-text number-lists-text">Правила публикации остальные блоки из списка ниже заполняет администратор сайта, такие как:
+								О стране / городе, Похожие предложения, Галерея фильмов, Контакты продавца
+							</p>
+							<li class="number-lists-item">Выбор рубрики</li>
+							<p class="terms-text number-lists-text">Правила публикации остальные блоки из списка ниже заполняет администратор сайта, такие как:
+								О стране / городе, Похожие предложения, Галерея фильмов, Контакты продавца
+							</p>
+							<p class="terms-text number-lists-text">Правила публикации остальные блоки из списка ниже заполняет администратор сайта, такие как:
+								О стране / городе, Похожие предложения, Галерея фильмов, Контакты продавца
+							</p>
+							<p class="terms-text number-lists-text">Правила публикации остальные блоки из списка ниже заполняет администратор сайта, такие как:
+								О стране / городе, Похожие предложения, Галерея фильмов, Контакты продавца
+							</p>
+						</ol>
+					</div> -->
+
+
+					<footer class="footer">
+						<div class="wrapper">
+							<div class="footer__items">
+								{{> footer/footer-center}}
+							</div>
+						</div>
+					</footer>
+					
+				</div>
+
+				{{> header/header-right-auth }}
+			</div>
+		</div>
+	</header>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAz0ad67Gl_FykDiUfEpNtu6debwfmFsfs&libraries=places&callback=initMap"
+	async defer>
+	</script>
+	{{> bottom/bottom }}
+</body>
+
+</html>

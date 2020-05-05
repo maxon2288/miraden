@@ -1,0 +1,408 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+<head>
+	{{> head/head head.defaults}}
+</head>
+
+<body class="page">
+	%=symbols=%
+
+	<header class="header">
+		<div class="wrapper">
+			<div class="header__items">
+				{{> header/header-left }}
+
+				<div class="center">
+
+					{{> header/header-center-top}} 
+
+					<div class="main__center main__center2">
+						<h1 class="main-caption main-caption2" data-first="« ANTARIA HOMES »" data-second="ВОЗВРАЩАЕТ ВАМ 3 %" data-third="ОТ ПОКУПКИ КВАРТИРЫ" data-fourth="НА КИПРЕ С ГАРАНТИЕЙ">
+							<span id="second">
+							</span>
+						</h1>
+						<p class="main-desc">
+							Совершая сделку у нас вы гарантированно получаете cashback 3% от стоимости объекта. Независимо от 
+							скидок агентов и самого застройщика! Пройдите регистрацию и получите доступ в каталог лучшей недвижимости Кипра
+						</p>
+						<div class="main-reg">
+							<span class="user-svg">
+								{{Icon iconName="user"}}
+							</span>
+							Регистрация
+							<span class="arr-svg">
+								{{Icon iconName="n-arr"}}
+							</span>
+						</div>
+						<img src="%=static=%img/general/main-bg2.png" class="main-img" alt="main">
+					</div>
+
+					<section class="advantage">
+						<div class="advantage__content">
+							<div class="swiper-container advantage-container">
+								<div class="swiper-wrapper advantage-wrapper">
+									<div class="swiper-slide advantage__item">
+										<span class="advantage__item-value">3%</span>
+										<div class="advantage__item-title">CASHBACK НА ВСЕ
+											НОВОСТРОЙКИ</div>
+										<span class="line"></span>
+										<p class="advantage__item-desc">Вы гарантированно получаете возврат в 3% от суммы покупки новостройки. </p>
+										<p class="advantage__item-desc">Независимо от скидок агентов и самого застройщика. Достаточно оформить заявку через наш каталог до визита на объект недвижимости. </p>
+									</div>
+									<div class="swiper-slide advantage__item">
+										<span class="advantage__item-value">50</span>
+										<div class="advantage__item-title">ТОП ОБЪЕКТОВ ДЛЯ
+											ГРАЖДАНСТВА ЕС</div>
+										<span class="line"></span>
+										<p class="advantage__item-desc">Инвестируя в недвижимость Кипра от 2 000 000 €, вы получаете возможность оформить паспорт ЕС за 6 месяцев. </p>
+										<p class="advantage__item-desc">Мы провели детальный анализ рынка и собрали для вас лучшие объекты в этой цене от надежных застройщиков</p>
+									</div>
+									<div class="swiper-slide advantage__item">
+										<span class="advantage__item-value">0%</span>
+										<div class="advantage__item-title">КОМИССИЯ
+											ПОРТАЛА MIRADEN</div>
+										<span class="line"></span>
+										<p class="advantage__item-desc">Вы не платите нам комиссию. Все расходы несет застройщик</p>
+										<p class="advantage__item-desc">По итогу вы получаете бесплатную и независимую консультацию при выборе недвижимости в закрытом каталоге MIRADEN</p>
+									</div>
+								</div>
+
+								<div class="nav-btn nav-btn-next">
+									{{Icon iconName="arr"}}
+								</div>
+								<div class="nav-btn nav-btn-prev">
+									{{Icon iconName="arr"}}
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="opportunities opportunities2">
+						<div class="opportunities__content">
+
+							<div class="vertical-line"></div>
+
+							<div class="opportunities__select">
+								<form action="">
+									<div class="sort">
+										<select name="" id="" class="sort-select">
+											<option value="1">Гражданство</option>
+											<option value="2">для продавца</option>
+										</select>
+									</div>
+								</form>
+							</div>
+
+							<div class="opportunities__title">
+								<h3>СТАНЬТЕ ГРАЖДАНИНОМ МИРА 
+								С « ANTARIA HOMES » ЗА 5 ШАГОВ</h3>
+							</div>
+
+							<div class="opportunities__items">
+
+								<div class="opportunities__item">
+									<div class="opportunities__item-info">
+										<h4 class="opportunities__item-title">КОНСУЛЬТИРУЕМ ВАС ПО СТРАТЕГИИ ИНВЕСТИРОВАНИЯ</h4>
+										<div class="line"></div>
+										<p class="opportunities__item-desc">Гражданство Кипра могут получить все соискатели после инвестирования в экономику страны 2 млн. евро на срок не менее трех лет.</p>
+										<p class="opportunities__item-desc">На выбор предлагаются разные варианты инвестирования в недвижимость (долевое строительство, покупка готовых объектов, земли и т.д.), покупка гособлигаций или паев в инвестиционных фондах, открытие...</p>
+										<a href="#" class="opportunities__item-link">подробнее...</a>
+									</div>
+									<div class="opportunities__item-image">
+										<img src="%=static=%img/general/prtnr-1.jpg" alt="image">
+									</div>
+								</div>
+
+								<div class="opportunities__item">
+									<div class="opportunities__item-image">
+										<img src="%=static=%img/general/prtnr-2.jpg" alt="image">
+									</div>
+									<div class="opportunities__item-info">
+										<h4 class="opportunities__item-title">ВСТРЕЧАЕМ И ПОМОГАЕМ ВЫБРАТЬ НЕДВИЖИМОСТЬ НА КИПРЕ</h4>
+										<div class="line"></div>
+										<p class="opportunities__item-desc">Мы организуем просмотр подобранных объектов, предоставим сведения о юридической чистоте каждого из них, предложим проект договора.</p>
+										<p class="opportunities__item-desc">Компания ANTARIAHOMES LTD сама является девелопером ряда крупных проектов, поэтому вы можете без рисков и на удобных условиях заключить договор приобретения ...</p>
+										<!-- <a href="#" class="opportunities__item-link">подробнее...</a> -->
+									</div>
+								</div>
+
+								<div class="opportunities__item">
+									<div class="opportunities__item-info">
+										<h4 class="opportunities__item-title">ГОТОВИМ ДОКУМЕНТЫ И СОПРОВОЖДАЕМ СДЕЛКУ</h4>
+										<div class="line"></div>
+										<p class="opportunities__item-desc">Мы полностью сопровождаем сделку, оказываем содействие при оформлении документов и регистрации права собственности в госорганах Кипра. </p>
+										<p class="opportunities__item-desc">Вы получаете развернутые консультации и помощь персонального менеджера на всех этапах, в том числе при подготовке пакета документов. </p>
+										<a href="#" class="opportunities__item-link">подробнее...</a>
+									</div>
+									<div class="opportunities__item-image">
+										<img src="%=static=%img/general/prtnr-3.jpg" alt="image">
+									</div>
+								</div>
+
+								<div class="opportunities__item">
+									<div class="opportunities__item-image">
+										<img src="%=static=%img/general/prtnr-4.jpg" alt="image">
+									</div>
+									<div class="opportunities__item-info">
+										<h4 class="opportunities__item-title">СОБИРАЕМ И ПОДАЕМ ДОКУМЕНТЫ НА ГРАЖДАНСТВО</h4>
+										<div class="line"></div>
+										<p class="opportunities__item-desc">Чтобы получить гражданство Кипра при покупке недвижимости надо собрать пакет документов. Затем через официально аккредитованное лицо они передаются в Министерство внутренних дел Кипра. </p>
+										<p class="opportunities__item-desc">Инвесторы проходят дополнительную проверку в Министерстве финансов. Затраты на нее оплачиваются заявителем. Состав пакета ...</p>
+										<a href="#" class="opportunities__item-link">подробнее...</a>
+									</div>
+								</div>
+
+								<div class="opportunities__item">
+									<div class="opportunities__item-info">
+										<h4 class="opportunities__item-title">ПОЛУЧАЕМ КИПРСКИЙ ПАСПОРТ ЗА 180 ДНЕЙ</h4>
+										<div class="line"></div>
+										<p class="opportunities__item-desc">После получения одобрения инвестор может лично явиться в страну или получить паспорт в московском консульстве. </p>
+										<p class="opportunities__item-desc">Общий срок получения гражданства на Кипре зависит от оперативности принятия решений по выбору типа инвестиций, возможностей клиента лично приехать для покупки недвижимости ... </p>
+										<a href="#" class="opportunities__item-link">подробнее...</a>
+									</div>
+									<div class="opportunities__item-image">
+										<img src="%=static=%img/general/prtnr-5.jpg" alt="image">
+									</div>
+								</div>
+
+							</div>
+
+							<div class="opportunities__register">
+								<div class="reg">
+									{{Icon iconName="user"}}
+									Регистрация
+								</div>
+							</div>
+
+						</div>
+					</section>
+
+					<section class="last">
+						<div class="last__content last__content2">
+
+							<div class="vertical-line"></div>
+
+							<div class="opportunities__select">
+								<form action="">
+									<div class="sort">
+										<select name="" id="" class="sort-select">
+											<option value="1">коммерческая недвижимость</option>
+											<option value="2">коммерческая недвижимость</option>
+										</select>
+									</div>
+								</form>
+							</div>
+
+							<div class="last__title">
+								<h3>объекты для получания гражданства</h3>
+							</div>
+
+							<div class="last__items">
+								{{> card/card }}
+								{{> card/special-card }}
+								{{> card/card }}
+								{{> card/card }}
+								{{> card/card }}
+
+							</div>
+
+							<div class="last__more">
+								<p>Открыть ещё <span>118 объектов</span></p>
+							</div>
+
+							<div class="last__open">
+								<div class="circle">
+									{{Icon iconName="n-arr"}}
+								</div>
+							</div>
+
+						</div>
+					</section>
+
+					<section class="hot">
+						<div class="hot__content hot__content2">
+
+							<div class="vertical-line"></div>
+
+							<div class="opportunities__select">
+								<form action="">
+									<div class="sort">
+										<select name="" id="" class="sort-select">
+											<option value="1">вилла</option>
+											<option value="2">вилла</option>
+										</select>
+									</div>
+								</form>
+							</div>
+
+							<div class="hot__title">
+								<h3>объекты для получания внж</h3>
+							</div>
+
+							<div class="hot__items">
+
+								{{> card/card-new }}
+								{{> card/card-new }}
+								{{> card/card-new }}
+								{{> card/card-new }}
+								{{> card/card-new }}
+
+							</div>
+
+							<div class="hot__more">
+								<p>Открыть ещё <span>118 объектов</span></p>
+							</div>
+
+							<div class="hot__open">
+								<div class="circle">
+									{{Icon iconName="n-arr"}}
+								</div>
+							</div>
+
+						</div>
+					</section>
+					
+					<div class="partner">
+						<div class="partner__items">
+							<div class="partner__left">
+								<div class="partner__left-title">продавец</div>
+								<div class="partner__left-image">
+									<img src="%=static=%img/general/partner.png" alt="Партнер">
+								</div>
+								<div class="partner__left-name">марина  поповиду</div>
+								<div class="partner__left-desc">
+									Основатель и управляющий директор
+									агенства недвижимости на юге Кипра
+									ANTARIA HOMES
+								</div>
+								<div class="partner__left-phone">
+									<a href="tel:+35726101382">+ 357-26-10-13-82</a>
+								</div>
+								<div class="partner__left-social">
+									<a href="#">WHATSAPP</a>
+									<a href="#">VIBER</a>
+									<a href="#">TELEGRAM</a>
+								</div>
+								<div class="partner__left-site">
+									<a href="http://antariahomes.com">ANTARIAHOMES.COM</a>
+								</div>
+							</div>
+							<div class="partner__right">
+								<div class="main__content-top">
+									<h4>ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</h4>
+									<p>Укажите ваши контакты и мы свяжемся
+									с вами в самое ближайшее время</p>
+								</div>
+								<div class="main__content-form">
+									<form action="">
+										<div class="form-block">
+											<input type="text" class="form-input" required>
+											<div class="linear"></div>
+											<span class="form-label">ваше имя</span>
+										</div>
+										<div class="form-block">
+											<input type="text" class="form-input" required>
+											<div class="linear"></div>
+											<span class="form-label">e-mail</span>
+										</div>
+										<div class="form-block">
+											<input type="text" class="form-input" required>
+											<div class="linear"></div>
+											<span class="form-label">номер телефона</span>
+										</div>
+
+										<div class="social-radios">
+											<label class="social-label">
+												<input type="radio" name="social" class="social-radio" checked>
+												<span class="circle">
+													<span class="circle-inner">
+													</span>
+												</span>
+												<span class="social-text">whatsapp</span>
+											</label>
+											<label class="social-label">
+												<input type="radio" name="social" class="social-radio">
+												<span class="circle">
+													<span class="circle-inner">
+													</span>
+												</span>
+												<span class="social-text">viber</span>
+											</label>
+											<label class="social-label">
+												<input type="radio" name="social" class="social-radio">
+												<span class="circle">
+													<span class="circle-inner">
+													</span>
+												</span>
+												<span class="social-text">telegram</span>
+											</label>
+										</div>
+										<div class="form-bottom">
+											<button class="form-button">
+												{{Icon iconName="lager"}}
+												ЗАКАЗАТЬ
+											</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="quest">
+						<div class="quest__items">
+							<div class="quest__left">
+								<div class="quest__left-title">
+									ответьте на <span>5 вопросов</span>
+									и получите подборку
+									топ-10 лучших объектов
+								</div>
+								<div class="line"></div>
+								<div class="quest__left-desc">
+									<p>Нет времени изучать каталог недвижимости? Просто ответьте на 5 простых вопросов и получите подборку из топ-10 лучших предложений рынка.</p>
+									<p>Наши эксперты учтут все ваши пожелания и предоставят информацию в течении дня</p>
+								</div>
+								<div class="opportunities__register">
+									<div class="reg">
+										{{Icon iconName="podob"}}
+										Подобрать
+									</div>
+								</div>
+							</div>
+							<div class="quest__right">
+								<img src="%=static=%img/general/prntr-block.png" alt="Партнер">
+							</div>
+						</div>
+					</div>
+
+					<footer class="footer">
+						<div class="wrapper">
+							<div class="footer__items">
+								{{> footer/footer-center}}
+							</div>
+						</div>
+					</footer>
+					
+				</div>
+
+				{{> header/header-right-partners }}
+			</div>
+		</div>
+	</header>
+
+	<!-- <div class="only-logo">
+		<div class="wrapper">
+			<div class="only-logo-wrap">
+				<img src="%=static=%img/general/logo.png" alt="Логотип">
+			</div>
+		</div>
+	</div>
+-->
+
+
+{{> bottom/bottom }}
+
+</body>
+
+</html>

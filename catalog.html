@@ -1,0 +1,113 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+<head>
+	{{> head/head head.defaults}}
+</head>
+
+<body class="page">
+	%=symbols=%
+
+	<header class="header">
+		<div class="wrapper">
+			<div class="header__items">
+				{{> header/header-left }}
+
+				<div class="center">
+					<section class="catalog">
+						<div class="catalog__header">
+
+							<div class="vertical-line"></div>
+
+							<div class="catalog__sort">
+								<span class="catalog__value">2850 объявлений</span>
+								<form action="">
+									<div class="sort">
+										<a href="#" class="sorted-link">по цене {{Icon iconName="d-arr"}}</a>
+									</div>
+								</form>
+								<form action="">
+									<div class="sort">
+										<a href="#" class="sorted-link">по дате {{Icon iconName="d-arr"}}</a>
+									</div>
+								</form>
+							</div>
+
+							<div class="catalog__bar">
+								<a href="#">Недвижимость за рубежом</a>
+								<a href="#">>Кипр</a>
+								<a href="#">>Лимассол</a>
+							</div>
+
+							<div class="catalog__title">
+								недвижимость в лимассоле
+							</div>
+
+						</div>
+
+						<div class="catalog__items">
+							{{> card/card }}
+							{{> card/special-card }}
+							{{> card/card }}
+							{{> card/card }}
+							{{> card/card }}
+							{{> card/card }}
+							{{> card/card }}
+							{{> card/card }}
+							{{> card/card }}
+							{{> card/card }}
+							{{> card/card }}
+							{{> card/card }}
+							{{> card/card }}
+							{{> card/card }}
+							{{> card/card }}
+							{{> card/card }}
+							{{> card/card }}
+							{{> card/card }}
+							{{> card/card }}
+							{{> card/card }}
+						</div>
+
+						<div class="catalog__pagination">
+							<a href="#" class="pag-link active">1</a>
+							<a href="#" class="pag-link">2</a>
+							<a href="#" class="pag-link">3</a>
+							<a href="#" class="pag-link">4</a>
+							<a href="#" class="pag-link">5</a>
+							<span>...</span>
+							<a href="#" class="pag-link">12</a>
+							<div class="catalog__value">
+								2850 объявлений
+							</div>
+						</div>
+
+					</section>
+
+					<footer class="footer">
+						<div class="wrapper">
+							<div class="footer__items">
+								{{> footer/footer-center}}
+							</div>
+						</div>
+					</footer>
+					
+				</div>
+
+				{{> header/header-right }}
+			</div>
+		</div>
+	</header>
+
+	<!-- <div class="only-logo">
+		<div class="wrapper">
+			<div class="only-logo-wrap">
+				<img src="%=static=%img/general/logo.png" alt="Логотип">
+			</div>
+		</div>
+	</div>
+-->
+
+{{> bottom/bottom }}
+</body>
+
+</html>

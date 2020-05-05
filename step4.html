@@ -1,0 +1,143 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+<head>
+	{{> head/head head.defaults}}
+</head>
+
+<body class="page">
+	%=symbols=%
+
+	<header class="header">
+		<div class="wrapper">
+			<div class="header__items">
+				{{> header/header-left }}
+
+				<div class="center">
+
+					{{> header/header-center-advert }}
+
+					<div class="step__add-header">
+						<ul class="tab-lists">
+							<li class="tab-list-item">Основные данные</li>
+							<li class="tab-list-item">Параметры</li>
+							<li class="tab-list-item">Преимущества</li>
+							<li class="tab-list-item active">Планировки</li>
+							<li class="tab-list-item">Видео</li>
+							<li class="tab-list-item">Детали покупки</li>
+						</ul>
+					</div>
+
+					<form action="" class="step__add-form">
+						
+						<div class="step__add-item">
+							<div class="step__body-title">Планировки:</div>
+
+							<div class="step__add-row step-add-row mt-2">
+								<div class="step-select mb-10 mr-3n">
+									<span class="tr-span">Этаж  
+									</span>
+									<select class="select-step new-select">
+										<option value="1" disabled="true">Общий план</option>
+										<option value="2" disabled="true">Территория</option>
+										<option value="3" disabled="true">Цоколь</option>
+										<option value="3" disabled="true">1 этаж</option>
+										<option value="3" disabled="true">2 этаж</option>
+										<option value="3" disabled="true">3 этаж</option>
+										<option value="3" disabled="true">4 этаж</option>
+										<option value="3" disabled="true">5 этаж</option>
+									</select>
+								</div>
+
+								<div class="step__add-field">
+									<label class="step-file-label">
+										<input type="file" name="file" class="step-file-input" id="step-file">
+										{{Icon iconName="upload"}}
+										загрузить файлы
+									</label>
+								</div>
+
+								<div class="step-uploaded-img">
+									<img src="static/img/general/plan.jpg" alt="">
+								</div>
+
+								<div class="step-uploaded-delete">
+									{{Icon iconName="close"}}
+								</div>
+							</div>
+
+							<div class="step__add-row step-add-row mt-2">
+								<div class="step-select mb-10 mr-3n">
+									<span class="tr-span">Этаж  
+									</span>
+									<select class="select-step new-select">
+										<option value="1" disabled="true">Общий план</option>
+										<option value="2" disabled="true">Территория</option>
+										<option value="3" disabled="true">Цоколь</option>
+										<option value="3" disabled="true">1 этаж</option>
+										<option value="3" disabled="true">2 этаж</option>
+										<option value="3" disabled="true">3 этаж</option>
+										<option value="3" disabled="true">4 этаж</option>
+										<option value="3" disabled="true">5 этаж</option>
+									</select>
+								</div>
+
+								<div class="step__add-field">
+									<label class="step-file-label">
+										<input type="file" name="file" class="step-file-input" id="step-file">
+										{{Icon iconName="upload"}}
+										загрузить файлы
+									</label>
+								</div>
+
+								<div class="step-uploaded-delete">
+									{{Icon iconName="close"}}
+								</div>
+							</div>
+
+						</div>
+
+						<div class="step-add-row-button">
+							{{Icon iconName="plus"}}
+						</div>
+
+						<div class="terms-submit">
+							<div class="terms-submit-check">
+
+							</div>
+							<div class="terms-submit-row">
+								<div class="step-pag">
+									<span class="step-page">4</span>
+									/
+									<span class="step-value">6 шагов</span>
+								</div>
+								<button data-src="/step3.html" class="step-btn">
+									Далее
+									{{Icon iconName="n-arr"}}
+								</button>
+							</div>
+						</div>
+
+
+					</form>
+
+
+					<footer class="footer">
+						<div class="wrapper">
+							<div class="footer__items">
+								{{> footer/footer-center}}
+							</div>
+						</div>
+					</footer>
+					
+				</div>
+
+				{{> header/header-right-auth }}
+			</div>
+		</div>
+	</header>
+
+	{{> bottom/bottom }}
+</body>
+
+</html>

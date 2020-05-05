@@ -1,0 +1,165 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+<head>
+	{{> head/head head.defaults}}
+</head>
+
+<body class="page">
+	%=symbols=%
+
+	<header class="header">
+		<div class="wrapper">
+			<div class="header__items">
+				{{> header/header-left }}
+
+				<div class="center">
+
+					{{> header/header-center-advert }}
+
+					<div class="step__add-header">
+						<ul class="tab-lists">
+							<li class="tab-list-item">Основные данные</li>
+							<li class="tab-list-item">Параметры</li>
+							<li class="tab-list-item">Преимущества</li>
+							<li class="tab-list-item">Планировки</li>
+							<li class="tab-list-item active">Видео</li>
+							<li class="tab-list-item">Детали покупки</li>
+						</ul>
+					</div>
+
+					<form action="" class="step__add-form">
+						
+						<div class="step__add-item">
+							<div class="step__body-title">видео:</div>
+
+							<div class="step__add-row mt-2">
+								<div class="step__add-field step__add-flex mr-11">
+									<input type="text" class="input-field" maxlength="80" required>
+									<span class="input-title">Название видео 
+									</span>
+								</div>
+								<div class="step__add-field step__add-flex mr-11">
+									<input type="text" class="input-field" maxlength="80" required>
+									<span class="input-title">Ссылка на видео 
+									</span>
+								</div>
+
+								<div class="step-select mini-select">
+									<!-- <span class="tr-span active">Платформа
+									</span> -->
+									<select class="select-step new-select" >
+										<option value="1" disabled="true" selected>YouTube </option>
+										<option value="2" disabled="true">Vimeo </option>
+									</select>
+								</div>
+							</div>
+						</div>
+
+						<div class="step__add-item mt-2">
+							<div class="step__body-title">3d тур:</div>
+
+							<div class="step__add-row mt-2">
+								<div class="step__add-field step__add-flex mr-11">
+									<input type="text" class="input-field" maxlength="80" required>
+									<span class="input-title">Название 3D тура 
+									</span>
+								</div>
+								<div class="step__add-field step__add-flex mr-11">
+									<input type="text" class="input-field" maxlength="80" required>
+									<span class="input-title">Ссылка на 3D тур 
+									</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="step__add-item mt-2">
+							<div class="step__body-title">прямой эфир:</div>
+
+							<div class="step__add-row mt-2">
+								<div class="step__add-field step__add-flex mr-11">
+									<input type="text" class="input-field" maxlength="80" required>
+									<span class="input-title">Название эфира
+									</span>
+								</div>
+								<div class="step__add-field step__add-flex mr-11">
+									<input type="text" class="input-field" maxlength="80" required>
+									<span class="input-title">Ссылка на эфир
+									</span>
+								</div>
+								<div class="step-select mini-select">
+									<!-- <span class="tr-span active">Платформа
+									</span> -->
+									<select class="select-step new-select">
+										<option value="1" disabled="true" selected>YouTube</option>
+										<option value="2" disabled="true">Vimeo </option>
+										<option value="3" disabled="true">Facebook</option>
+									</select>
+								</div>
+							</div>
+							<div class="step__add-row">
+								<div class="step__add-field step__add-flex mr-11">
+									<div class="datepicker">
+										<!-- <input type="date" class="input-field input-field-date form-datepicker" maxlength="80" required> -->
+										
+										<input type="text" readonly class="input-field form-datepicker" autocomplete="off" placeholder="дата эфира">
+
+									</div>
+
+								</div>
+								<div class="step__add-field step__add-flex mr-11">
+									<input type="time" class="input-field" maxlength="80" required>
+									<span class="input-title">Время начала эфира
+									</span>
+								</div>
+								<div class="step-select mini-select">
+									<span class="tr-span">Пояс
+									</span>
+									<select class="select-step new-select">
+										<option value="1" disabled="true">UTC+4</option>
+										<option value="2" disabled="true">UTC+5</option>
+										<option value="3" disabled="true">UTC+6</option>
+									</select>
+								</div>
+							</div>
+						</div>
+
+						<div class="terms-submit">
+							<div class="terms-submit-check">
+
+							</div>
+							<div class="terms-submit-row">
+								<div class="step-pag">
+									<span class="step-page">5</span>
+									/
+									<span class="step-value">6 шагов</span>
+								</div>
+								<button data-src="/step3.html" class="step-btn">
+									Далее
+									{{Icon iconName="n-arr"}}
+								</button>
+							</div>
+						</div>
+
+
+					</form>
+
+					<footer class="footer">
+						<div class="wrapper">
+							<div class="footer__items">
+								{{> footer/footer-center}}
+							</div>
+						</div>
+					</footer>
+					
+				</div>
+
+				{{> header/header-right-auth }}
+			</div>
+		</div>
+	</header>
+
+	{{> bottom/bottom }}
+</body>
+
+</html>

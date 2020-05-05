@@ -1,0 +1,660 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+<head>
+	{{> head/head head.defaults}}
+</head>
+
+<body class="page">
+	%=symbols=%
+
+	<header class="header">
+		<div class="wrapper">
+			<div class="header__items">
+				{{> header/header-left }}
+
+				<div class="center">
+
+					{{> header/header-center-advert }}
+
+					<div class="step__add-header">
+						<ul class="tab-lists">
+							<li class="tab-list-item">Основные данные</li>
+							<li class="tab-list-item">Параметры</li>
+							<li class="tab-list-item">Преимущества</li>
+							<li class="tab-list-item">Планировки</li>
+							<li class="tab-list-item">Видео</li>
+							<li class="tab-list-item active">Детали покупки</li>
+						</ul>
+					</div>
+
+					<form action="" class="step__add-form">
+
+						<div class="step__add-item">
+							<div class="step__body-title">детали покупки:</div>
+							
+							<div class="step__add-row mt-2">
+								<label class="big-label">
+									<input type="radio" name="big" class="big-radio">
+									<div class="big-label-head">
+										<div class="custom">
+											{{Icon iconName="true"}}
+										</div>
+										<div class="big-label-text">
+											ПОКУПАТЕЛЬ ГАРАНТИРОВАННО ПОЛУЧАЕТ CASHBACK 3% 
+
+										</div>
+									</div>
+									<p class="big-label-desc">При покупке данного объекта недвижимости вы гарантированно получаете cashback 3% от суммы сделки. Продавец возвращает вам деньги в течении месяца с момента подписания договора о передаче прав собственности. 
+									</p>
+									<p class="big-label-desc">Выплата происходит независимо от скидок самого застройщика или агента. Достаточно оформить заявку через каталог MIRADEN до визита на объект. 
+									</p>
+								</label>
+								<label class="big-label">
+									<input type="radio" name="big" class="big-radio">
+									<div class="big-label-head">
+										<div class="custom">
+											{{Icon iconName="true"}}
+										</div>
+										<div class="big-label-text">
+											ДАННЫЙ ОБЪЕКТ ПРОДАЕТСЯ ПО МЕТОДУ ОНЛАЙН-АУКЦИОНА
+
+										</div>
+									</div>
+									<p class="big-label-desc">Эта недвижимость обладает ценой ниже рынка и продается только через аукцион на повышение. Торги проходят в режиме онлайн, что позволяет вам предложить свою цену из любой точки мира. 
+									</p>
+									<p class="big-label-desc">По итогу победитель торгов оплачивает 1% брони в течении 10 дней или передает право покупки следующему участнику.  
+									</p>
+									<p class="big-label-desc">Аукцион завершается: 20.20.2020
+									</p>
+								</label>
+								<label class="big-label">
+									<input type="radio" name="big" class="big-radio">
+									<div class="big-label-head">
+										<div class="custom">
+											{{Icon iconName="true"}}
+										</div>
+										<div class="big-label-text">
+											
+ВОЗМОЖНОСТЬ ОФОРМИТЬ СДЕЛКУ ДИСТАНЦИОННО
+
+										</div>
+									</div>
+									<p class="big-label-desc">Вы можете приобрести данную недвижимость без визита в страну. В этом случае все риски берет на себя нотариус, в том числе проверку доверенности и подписи сторон. 
+									</p>
+									<p class="big-label-desc">Собственник подписывает ДКП в присутствии нотариуса. Документы заверяются электронной подписью и высылаются нотариусу покупателя. Взаиморасчеты по сделке происходит через депозит нотариуса.
+									</p>
+								</label>
+							</div>
+						</div>
+
+						<div class="step__add-item mt-2">
+							<div class="step__body-title">график роста цен:</div>
+
+							<div class="step__add-wrap mt-2">
+								<div class="header__center-item full-item">
+									<span class="item-svg">
+										{{Icon iconName="d-arr"}}
+									</span>
+									<input type="text" class="custom-input" id="ned-input" readonly required>
+									<span class="custom-input-title">Год</span>
+									<div class="search-variants">
+										<div class="search-variants--wrap">
+											<div class="search-variants-items">
+												<label>
+													<input type="radio" value="2020" class="ned-input">
+													<span>2020</span>
+												</label>
+												<label>
+													<input type="radio" value="2021" class="ned-input">
+													<span>2021</span>
+												</label>
+												<label>
+													<input type="radio" value="2022" class="ned-input">
+													<span>2022</span>
+												</label>
+												<label>
+													<input type="radio" value="2023" class="ned-input">
+													<span>2023</span>
+												</label>
+												<label>
+													<input type="radio" value="2024" class="ned-input">
+													<span>2024</span>
+												</label>
+												<label>
+													<input type="radio" value="2025" class="ned-input">
+													<span>2025</span>
+												</label>
+												<label>
+													<input type="radio" value="2026" class="ned-input">
+													<span>2026</span>
+												</label>
+												<label>
+													<input type="radio" value="2027" class="ned-input">
+													<span>2027</span>
+												</label>
+												<label>
+													<input type="radio" value="2028" class="ned-input">
+													<span>2028</span>
+												</label>
+												<label>
+													<input type="radio" value="2029" class="ned-input">
+													<span>2029</span>
+												</label>
+												<label>
+													<input type="radio" value="2030" class="ned-input">
+													<span>2030</span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="header__center-item full-item">
+									<span class="item-svg">
+										{{Icon iconName="d-arr"}}
+									</span>
+									<input type="text" class="custom-input" id="ned-input-1" readonly required>
+									<span class="custom-input-title">Месяц</span>
+									<div class="search-variants">
+										<div class="search-variants--wrap">
+											<div class="search-variants-items">
+												<label>
+													<input type="radio" value="01" class="ned-input">
+													<span>01</span>
+												</label>
+												<label>
+													<input type="radio" value="02" class="ned-input">
+													<span>02</span>
+												</label>
+												<label>
+													<input type="radio" value="03" class="ned-input">
+													<span>03</span>
+												</label>
+												<label>
+													<input type="radio" value="04" class="ned-input">
+													<span>04</span>
+												</label>
+												<label>
+													<input type="radio" value="05" class="ned-input">
+													<span>05</span>
+												</label>
+												<label>
+													<input type="radio" value="06" class="ned-input">
+													<span>06</span>
+												</label>
+												<label>
+													<input type="radio" value="07" class="ned-input">
+													<span>07</span>
+												</label>
+												<label>
+													<input type="radio" value="08" class="ned-input">
+													<span>08</span>
+												</label>
+												<label>
+													<input type="radio" value="09" class="ned-input">
+													<span>09</span>
+												</label>
+												<label>
+													<input type="radio" value="10" class="ned-input">
+													<span>10</span>
+												</label>
+												<label>
+													<input type="radio" value="11" class="ned-input">
+													<span>11</span>
+												</label>
+												<label>
+													<input type="radio" value="12" class="ned-input">
+													<span>12</span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="step__add-field step__add-flex">
+									<div class="step__add-select-145">
+										<select class="select new-select">
+											<option value="1">День </option>
+											<option value="2">1</option>
+											<option value="2">2</option>
+											<option value="2">3</option>
+											<option value="2">4</option>
+											<option value="2">5</option>
+											<option value="2">6</option>
+											<option value="2">7</option>
+											<option value="2">8</option>
+											<option value="2">9</option>
+											<option value="2">10</option>
+											<option value="2">11</option>
+											<option value="2">12</option>
+											<option value="2">13</option>
+											<option value="2">14</option>
+											<option value="2">15</option>
+											<option value="2">16</option>
+											<option value="2">17</option>
+											<option value="2">18</option>
+											<option value="2">19</option>
+											<option value="2">20</option>
+											<option value="2">21</option>
+											<option value="2">22</option>
+											<option value="2">23</option>
+											<option value="2">24</option>
+											<option value="2">25</option>
+											<option value="2">26</option>
+											<option value="2">27</option>
+											<option value="2">28</option>
+											<option value="2">29</option>
+											<option value="2">30</option>
+											<option value="2">31</option>
+										</select>
+									</div>
+								</div>
+								<div class="step__add-field step__add-flex">
+									<div class="step__add-select-145">
+										<select class="select new-select">
+											<option value="2">Рост</option>
+											<option value="2">%</option>
+											<option value="2">€</option>
+											<option value="2">$</option>
+											<option value="2">₽</option>
+											<option value="2">£</option>
+										</select>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="step__add-item mt-2">
+							<div class="step__body-title">УСЛОВИЯ РАССРОЧКИ:</div>
+
+							<div class="step__add-block">
+
+								<div class="step__add-wrapper">
+									<div class="step__add-field step__add-flex mr-11">
+										<input type="text" class="input-field" maxlength="80" required>
+										<span class="input-title">первый взнос
+										</span>
+										
+										<div class="step__add-select step__add-mini">
+											<select class="select new-select">
+												<option value="1">%</option>
+												<option value="1">%</option>
+												<option value="2">€</option>
+												<option value="3">$</option>
+												<option value="3">₽</option>
+												<option value="3">£</option>
+											</select>
+										</div>
+									</div>
+									<div class="step__add-field step__add-flex mr-11">
+										<input type="text" class="input-field" maxlength="80" required>
+										<span class="input-title">Период рассрочки 
+										</span>
+
+										<div class="step__add-select step__add-mini">
+											<select class="select new-select">
+												<option value="1">год</option>
+												<option value="3">Месяц</option>
+											</select>
+										</div>
+									</div>
+									<div class="step__add-field step__add-flex mr-11">
+										<input type="text" class="input-field" maxlength="80" required>
+										<span class="input-title">Следующий взнос
+										</span>
+
+										<div class="step__add-select">
+											<select class="select new-select">
+												<option value="1">%</option>
+												<option value="2">€</option>
+												<option value="3">$</option>
+												<option value="3">₽</option>
+												<option value="3">£</option>
+											</select>
+										</div>
+									</div>
+									<div class="step__add-field step__add-flex mr-11">
+										<input type="text" class="input-field" maxlength="80" required>
+										<span class="input-title">Интервал времени
+										</span>
+
+										<div class="step__add-select">
+											<select class="select new-select">
+												<option value="1">Каждый месяц
+												</option>
+												<option value="2">1</option>
+												<option value="2">2</option>
+												<option value="2">3</option>
+												<option value="2">4</option>
+												<option value="2">5</option>
+												<option value="2">6</option>
+												<option value="2">7</option>
+												<option value="2">8</option>
+												<option value="2">9</option>
+												<option value="2">10</option>
+												<option value="2">11</option>
+												<option value="2">12</option>
+											</select>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+						</div>
+						
+						<div class="step__add-item mt-2">
+							<div class="step__body-title">АРЕНДА С ПРАВОМ ВЫКУПА:</div>
+
+							<div class="step__add-block">
+
+								<div class="step__add-wrapper">
+									<div class="step__add-field step__add-flex mr-11">
+										<input type="text" class="input-field" maxlength="80" required>
+										<span class="input-title">первый взнос
+										</span>
+										
+										<div class="step__add-select step__add-mini">
+											<select class="select new-select">
+												<option value="1">%</option>
+												<option value="1">%</option>
+												<option value="2">€</option>
+												<option value="3">$</option>
+												<option value="3">₽</option>
+												<option value="3">£</option>
+											</select>
+										</div>
+									</div>
+									<div class="step__add-field step__add-flex mr-11">
+										<input type="text" class="input-field" maxlength="80" required>
+										<span class="input-title">Период аренды
+										</span>
+
+										<div class="step__add-select step__add-mini">
+											<select class="select new-select">
+												<option value="1">год</option>
+												<option value="3">Месяц</option>
+											</select>
+										</div>
+									</div>
+									<div class="step__add-field step__add-flex mr-11">
+										<input type="text" class="input-field" maxlength="80" required>
+										<span class="input-title">Аренда в месяц 
+										</span>
+
+										<div class="step__add-select">
+											<select class="select new-select">
+												<option value="1">%</option>
+												<option value="2">€</option>
+												<option value="3">$</option>
+												<option value="3">₽</option>
+												<option value="3">£</option>
+											</select>
+										</div>
+									</div>
+									
+									<a href="#" class="advantage__item-link">Договор аренды с правом выкупа </a>
+
+								</div>
+
+							</div>
+						</div>
+						
+					
+
+						<div class="step__add-item mt-2">
+							<div class="step__body-title">документы:</div>
+
+							<div class="step__add-row step-add-row mt-2">
+								<div class="step-select mb-10 mr-3n">
+									<span class="tr-span">название документа 
+									</span>
+									<select class="select-step new-select">
+										<option value="1" disabled="true">Права собственности
+
+										</option>
+										<option value="2" disabled="true">Лицензия продавца
+										</option>
+										<option value="3" disabled="true">Владение земельным участком
+										</option>
+										<option value="3" disabled="true">Права на управление объектом       
+										</option>
+										<option value="3" disabled="true">Эксклюзивный договор агента
+										</option>
+										<option value="3" disabled="true">Отсутствие задолженности
+										</option>
+										<option value="3" disabled="true">Договор о неразглашении / nda
+										</option>
+									</select>
+								</div>
+
+								<div class="step__add-field">
+									<label class="step-file-label">
+										<input type="file" name="file" class="step-file-input" id="step-file">
+										{{Icon iconName="upload"}}
+										загрузить файлы
+									</label>
+								</div>
+
+								<div class="step-uploaded-img"></div>
+							</div>
+
+							<div class="step__add-row step-add-row mt-2">
+								<div class="step-select mb-10 mr-3n">
+									<span class="tr-span">название документа 
+									</span>
+									<select class="select-step new-select">
+										<option value="1" disabled="true">Права собственности
+
+										</option>
+										<option value="2" disabled="true">Лицензия продавца
+										</option>
+										<option value="3" disabled="true">Владение земельным участком
+										</option>
+										<option value="3" disabled="true">Права на управление объектом       
+										</option>
+										<option value="3" disabled="true">Эксклюзивный договор агента
+										</option>
+										<option value="3" disabled="true">Отсутствие задолженности
+										</option>
+										<option value="3" disabled="true">Договор о неразглашении / nda
+										</option>
+									</select>
+								</div>
+
+								<div class="step__add-field">
+									<label class="step-file-label">
+										<input type="file" name="file" class="step-file-input" id="step-file">
+										{{Icon iconName="upload"}}
+										загрузить файлы
+									</label>
+								</div>
+
+								<div class="step-uploaded-img">
+									<img src="static/img/general/plan.jpg" alt="">
+								</div>
+
+								<div class="step-uploaded-delete">
+									{{Icon iconName="close"}}
+								</div>
+							</div>
+
+							<div class="step__add-row step-add-row mt-2">
+								<div class="step-select mb-10 mr-3n">
+									<span class="tr-span">название документа 
+									</span>
+									<select class="select-step new-select">
+										<option value="1" disabled="true">Права собственности
+
+										</option>
+										<option value="2" disabled="true">Лицензия продавца
+										</option>
+										<option value="3" disabled="true">Владение земельным участком
+										</option>
+										<option value="3" disabled="true">Права на управление объектом       
+										</option>
+										<option value="3" disabled="true">Эксклюзивный договор агента
+										</option>
+										<option value="3" disabled="true">Отсутствие задолженности
+										</option>
+										<option value="3" disabled="true">Договор о неразглашении / nda
+										</option>
+									</select>
+								</div>
+
+								<div class="step__add-field">
+									<label class="step-file-label">
+										<input type="file" name="file" class="step-file-input" id="step-file">
+										{{Icon iconName="upload"}}
+										загрузить файлы
+									</label>
+								</div>
+
+								<div class="step-uploaded-delete">
+									{{Icon iconName="close"}}
+								</div>
+							</div>
+							
+						</div>
+						<div class="step-add-row-button">
+							{{Icon iconName="plus"}}
+						</div>
+
+						<div class="step__add-item mt-2">
+							<div class="step__body-title">контакты продавца:</div>
+
+							<div class="step__add-row mt-2">
+								<div class="step__add-field step__add-flex  mr-11">
+									<input type="text" class="input-field" maxlength="80" required>
+									<span class="input-title">Имя 
+									</span>
+								</div>
+								<div class="step-select mr-11">
+									<span class="tr-span">статус 
+									</span>
+									<select class="select-step new-select">
+										<option value="1" disabled="true">Риелтор</option>
+										<option value="2" disabled="true">Застройщик</option>
+										<option value="3" disabled="true">Собственник</option>
+									</select>
+								</div>
+								<div class="step__add-field step__add-flex">
+									<input type="text" class="input-field" maxlength="80" required>
+									<span class="input-title">название компании
+									</span>
+								</div>
+							</div>
+							<div class="step__add-wrapper">
+								<div class="step__add-field step__add-flex  mr-11">
+									<input type="text" class="input-field" maxlength="80" required>
+									<span class="input-title">телефон
+									</span>
+								</div>
+								<div class="step__add-field step__add-flex  mr-11">
+									<input type="text" class="input-field" maxlength="80" required>
+									<span class="input-title">мессенджер
+									</span>
+								</div>
+								<div class="step__add-field step__add-flex  mr-11">
+									<input type="email" class="input-field" maxlength="80" required>
+									<span class="input-title">E-mail 
+									</span>
+								</div>
+
+								<div class="step__add-field">
+									<div class="social-radios">
+										<label class="social-label">
+											<input type="radio" name="social" class="social-radio" checked>
+											<span class="circle">
+												<span class="circle-inner">
+												</span>
+											</span>
+											<span class="social-text">whatsapp</span>
+										</label>
+										<label class="social-label">
+											<input type="radio" name="social" class="social-radio">
+											<span class="circle">
+												<span class="circle-inner">
+												</span>
+											</span>
+											<span class="social-text">viber</span>
+										</label>
+										<label class="social-label">
+											<input type="radio" name="social" class="social-radio">
+											<span class="circle">
+												<span class="circle-inner">
+												</span>
+											</span>
+											<span class="social-text">telegram</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="step__add-row">
+								<div class="step__add-field step__add-flex  mr-11">
+									<input type="text" class="input-field" maxlength="80" id="getSymbol" required>
+									<span class="input-title">e-mail
+									</span>
+								</div>
+
+								<div class="step__add-field">
+									<label class="step-file-label">
+										<input type="file" name="photo" class="step-file-input" id="photo-file">
+										{{Icon iconName="upload"}}
+										загрузить фото
+									</label>
+								</div>
+
+								<div class="step-uploaded-photo">
+									<span class="first-symbol" id="first-symbol">?</span>
+								</div>
+							</div>
+						</div>
+
+
+
+
+						<div class="terms-submit">
+							<div class="terms-submit-check">
+								<div class="last-step">
+									Модерация проходит в ручном режиме 
+										и может занять несколько дней.
+
+								</div>
+							</div>
+							<div class="terms-submit-row">
+								<div class="step-pag">
+									<span class="step-page">6</span>
+									/
+									<span class="step-value">6 шагов</span>
+								</div>
+								<button data-src="/step3.html" class="step-btn">
+									На модерацию
+									{{Icon iconName="n-arr"}}
+								</button>
+							</div>
+						</div>
+
+
+					</form>
+
+					<footer class="footer">
+						<div class="wrapper">
+							<div class="footer__items">
+								{{> footer/footer-center}}
+							</div>
+						</div>
+					</footer>
+					
+				</div>
+
+				{{> header/header-right-auth }}
+			</div>
+		</div>
+	</header>
+
+	{{> bottom/bottom }}
+</body>
+
+</html>

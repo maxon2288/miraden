@@ -1,0 +1,166 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+<head>
+	{{> head/head head.defaults}}
+</head>
+
+<body class="page">
+	%=symbols=%
+
+	<header class="header">
+		<div class="wrapper">
+			<div class="header__items">
+				{{> header/header-left }}
+
+				<div class="center">
+
+					<div class="step">
+						<div class="step__header">
+							<div class="vertical-line"></div>
+							<div class="step__title">
+								<h3>добавить объявление</h3>
+							</div>
+						</div>
+
+						<div class="step__add-header">
+							<ul class="tab-lists">
+								<li class="tab-list-item active">Основные данные</li>
+								<li class="tab-list-item">Параметры</li>
+								<li class="tab-list-item">Преимущества</li>
+								<li class="tab-list-item">Планировки</li>
+								<li class="tab-list-item">Видео</li>
+								<li class="tab-list-item">Детали покупки</li>
+							</ul>
+						</div>
+
+
+						<form action="" class="step__form">
+							<div class="step__body">
+								<div class="step__body-title">Основные данные:</div>
+								<div class="step__body-row">
+									<label class="step-label">
+										<input type="radio" name="var" class="step-input" checked>
+										<span class="step-circle">
+											<span class="step-inner"></span>
+										</span>
+										продажа
+									</label>
+									<label class="step-label">
+										<input type="radio" name="var" class="step-input">
+										<span class="step-circle">
+											<span class="step-inner"></span>
+										</span>
+										аренда
+									</label>
+									<div class="step-select">
+										<span class="tr-span">Тип недвижимости 
+										<span class="state-star">*</span>
+										</span>
+										<select class="select-step new-select">
+											<option value="1" disabled="true">Квартира</option>
+											<option value="2" disabled="true">Апартаменты </option>
+											<option value="3" disabled="true">Дом, вилла
+											</option>
+											<option value="3" disabled="true">Пентхаус</option>
+											<option value="3" disabled="true">Таунхаус</option>
+											<option value="3" disabled="true">Замок, особняк
+											</option>
+											<option value="3" disabled="true">Участок земли
+											</option>
+											<option value="3" disabled="true">Остров</option>
+											<option value="3" disabled="true">Коммерческая</option>
+										</select>
+									</div>
+									<label class="step-label">
+										<input type="radio" name="type" class="step-input" checked>
+										<span class="step-circle">
+											<span class="step-inner"></span>
+										</span>
+										новая
+									</label>
+									<label class="step-label">
+										<input type="radio" name="type" class="step-input">
+										<span class="step-circle">
+											<span class="step-inner"></span>
+										</span>
+										вторичная
+									</label>
+								</div>
+							</div>
+
+							<div class="alert">
+								<div class="alert__title">
+									УСЛОВИЯ ПУБЛИКАЦИИ ОБЪЯВЛЕНИЯ:
+								</div>
+								<div class="alert__list-item">
+									Публикуя объект вы соглашаетесь с настоящими условиями закрытого каталога MIRADEN:
+								</div>
+								<ol class="alert__list">
+									<li class="alert__list-item">Размещение объекта недвижимости в каталоге MIRADEN бесплатно! Вы платите комиссию только по факту совершенной сделки.
+										<a href="#">Подробнее</a>
+									</li>
+									<li class="alert__list-item">Мы оставляем за собой право использовать контакты клиентов, оставивших заявку на объект продавца.
+										<a href="#">Подробнее</a>
+									</li>
+									<li class="alert__list-item">Размещение объекта должно соответствовать правилам каталога MIRADEN. При нарушении правил заявка на размещение объявления может быть отклонена модератором каталога. 
+										<a href="#">Подробнее</a>
+									</li>
+									<li class="alert__list-item">Вся новая недвижимость продается по методу CASHBACK, где продавец обязуется вернуть покупателю % от суммы совершенной сделки.
+										<a href="#">Подробнее</a>
+									</li>
+									<li class="alert__list-item">Вся вторичная недвижимость продается по методу Аукциона на повышение. При этом продавец всегда оставляет за собой право отказаться от сделки и продолжить торги. 
+										<a href="#">Подробнее</a>
+									</li>
+								</ol>
+							</div>
+
+							<div class="terms-submit">
+								<div class="terms-submit-check">
+									<label class="territory-label">
+										<input type="checkbox" class="territory-input">
+										<span class="custom">
+											{{Icon iconName="true"}}
+										</span>
+										<span class="territory-text">
+											Я принимаю <br>
+											<a href="/" target="_blank">условия публикации объявления</a> <br> в каталоге MIRADEN 
+										</span>
+									</label>
+								</div>
+								<div class="terms-submit-row">
+									<div class="step-pag">
+										<span class="step-page">1</span>
+										/
+										<span class="step-value">6 шагов</span>
+									</div>
+									<button class="step-btn" id="step-two">
+										Далее
+										{{Icon iconName="n-arr"}}
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+
+					
+
+					<footer class="footer">
+						<div class="wrapper">
+							<div class="footer__items">
+								{{> footer/footer-center}}
+							</div>
+						</div>
+					</footer>
+					
+				</div>
+
+				{{> header/header-right-auth }}
+			</div>
+		</div>
+	</header>
+
+	{{> bottom/bottom }}
+</body>
+
+</html>

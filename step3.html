@@ -1,0 +1,844 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+<head>
+	{{> head/head head.defaults}}
+</head>
+
+<body class="page">
+	%=symbols=%
+
+	<header class="header">
+		<div class="wrapper">
+			<div class="header__items">
+				{{> header/header-left }}
+
+				<div class="center">
+					{{> header/header-center-advert }}
+
+					<div class="step__add-header">
+						<ul class="tab-lists">
+							<li class="tab-list-item">Основные данные</li>
+							<li class="tab-list-item">Параметры</li>
+							<li class="tab-list-item active">Преимущества</li>
+							<li class="tab-list-item">Планировки</li>
+							<li class="tab-list-item">Видео</li>
+							<li class="tab-list-item">Детали покупки</li>
+						</ul>
+					</div>
+
+					<form class="step__add-form">
+						<div class="step__add-item">
+							<div class="step__body-title">На территории:</div>
+
+							<div class="step__add-block">
+								<div class="step__add-territory">
+									<div class="territory-column">
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Бассейн
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Паркинг
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Зона барбекю
+
+
+
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Лаунж-зона
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Хамам
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Сауна
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												СПА-центр
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Тренажерный зал
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Спортивный центр
+											</span>
+										</label>
+									</div>
+									<div class="territory-column">
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Теннисный корт
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Бильярд
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Боулинг
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Кинотеатр
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Детская площадка
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Кафе / Ресторан
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Винная комната
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Лобби
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Конференц зал
+											</span>
+										</label>
+									</div>
+									<div class="territory-column">
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Консьерж
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Химчистка
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Вид на горы
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Вид на парк
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Вид на океан
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Вид на море
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Вид на реку
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Вид на озеро
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Панорамный вид
+											</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="step__add-item mt-2">
+							<div class="step__body-title">расстояния:</div>
+
+							<div class="step__add-block">
+								<div class="step__add-row">
+									<div class="step__add-field step__add-flex mr-11">
+										<input type="text" class="input-field" maxlength="80" required>
+										<span class="input-title">Море / Океан
+										</span>
+										
+										<div class="step__add-select step__add-mini">
+											<select class="select new-select">
+												<option value="1">km</option>
+												<option value="2">m</option>
+											</select>
+										</div>
+									</div>
+									
+									<div class="step__add-field step__add-flex mr-11">
+										<input type="text" class="input-field" maxlength="80" required>
+										<span class="input-title">пляж
+										</span>
+
+										<div class="step__add-select step__add-mini">
+											<select class="select new-select">
+												<option value="1">km</option>
+												<option value="2">m</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="step__add-row">
+									<div class="step__add-field step__add-flex mr-11">
+										<input type="text" class="input-field" maxlength="80" required>
+										<span class="input-title">Река / Озеро
+										</span>
+										
+										<div class="step__add-select step__add-mini">
+											<select class="select new-select">
+												<option value="1">km</option>
+												<option value="2">m</option>
+											</select>
+										</div>
+									</div>
+									<div class="step__add-field step__add-flex mr-11">
+										<input type="text" class="input-field" maxlength="80" required>
+										<span class="input-title">парк
+										</span>
+
+										<div class="step__add-select step__add-mini">
+											<select class="select new-select">
+												<option value="1">km</option>
+												<option value="2">m</option>
+											</select>
+										</div>
+									</div>
+									<div class="step__add-field step__add-flex mr-11">
+										<input type="text" class="input-field" maxlength="80" required>
+										<span class="input-title">центр города
+										</span>
+
+										<div class="step__add-select step__add-mini">
+											<select class="select new-select">
+												<option value="1">km</option>
+												<option value="2">m</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="step__add-row">
+									<div class="step__add-field step__add-flex mr-11">
+										<input type="text" class="input-field" maxlength="80" required>
+										<span class="input-title">метро
+										</span>
+										
+										<div class="step__add-select step__add-mini">
+											<select class="select new-select">
+												<option value="1">km</option>
+												<option value="2">m</option>
+											</select>
+										</div>
+									</div>
+									<div class="step__add-field step__add-flex mr-11">
+										<input type="text" class="input-field" maxlength="80" required>
+										<span class="input-title">детский сад
+										</span>
+
+										<div class="step__add-select step__add-mini">
+											<select class="select new-select">
+												<option value="1">km</option>
+												<option value="2">m</option>
+											</select>
+										</div>
+									</div>
+									<div class="step__add-field step__add-flex mr-11">
+										<input type="text" class="input-field" maxlength="80" required>
+										<span class="input-title">школа
+										</span>
+
+										<div class="step__add-select step__add-mini">
+											<select class="select new-select">
+												<option value="1">km</option>
+												<option value="2">m</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="step__add-row">
+									<div class="step__add-field step__add-flex mr-11">
+										<input type="text" class="input-field" maxlength="80" required>
+										<span class="input-title">больница
+										</span>
+										
+										<div class="step__add-select step__add-mini">
+											<select class="select new-select">
+												<option value="1">km</option>
+												<option value="2">m</option>
+											</select>
+										</div>
+									</div>
+									<div class="step__add-field step__add-flex mr-11">
+										<input type="text" class="input-field" maxlength="80" required>
+										<span class="input-title">аэропорт
+										</span>
+
+										<div class="step__add-select step__add-mini">
+											<select class="select new-select">
+												<option value="1">km</option>
+												<option value="2">m</option>
+											</select>
+										</div>
+									</div>
+									<div class="step__add-field step__add-flex mr-11">
+										<input type="text" class="input-field" maxlength="80" required>
+										<span class="input-title">автомагистраль
+										</span>
+
+										<div class="step__add-select step__add-mini">
+											<select class="select new-select">
+												<option value="1">km</option>
+												<option value="2">m</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="step__add-row">
+									<div class="step__add-field step__add-flex mr-11">
+										<input type="text" class="input-field" maxlength="80" required>
+										<span class="input-title">торговый центр
+										</span>
+										
+										<div class="step__add-select step__add-mini">
+											<select class="select new-select">
+												<option value="1">km</option>
+												<option value="2">m</option>
+											</select>
+										</div>
+									</div>
+									<div class="step__add-field step__add-flex mr-11">
+										<input type="text" class="input-field" maxlength="80" required>
+										<span class="input-title">спортивный центр
+										</span>
+
+										<div class="step__add-select step__add-mini">
+											<select class="select new-select">
+												<option value="1">km</option>
+												<option value="2">m</option>
+											</select>
+										</div>
+									</div>
+									<div class="step__add-field step__add-flex mr-11">
+										<input type="text" class="input-field" maxlength="80" required>
+										<span class="input-title">спа-центр
+										</span>
+
+										<div class="step__add-select step__add-mini">
+											<select class="select new-select">
+												<option value="1">km</option>
+												<option value="2">m</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="step__add-row">
+									<div class="step__add-field step__add-flex mr-11">
+										<input type="text" class="input-field" maxlength="80" required>
+										<span class="input-title">салон красоты
+										</span>
+										
+										<div class="step__add-select step__add-mini">
+											<select class="select new-select">
+												<option value="1">km</option>
+												<option value="2">m</option>
+											</select>
+										</div>
+									</div>
+									<div class="step__add-field step__add-flex mr-11">
+										<input type="text" class="input-field" maxlength="80" required>
+										<span class="input-title">супермаркет
+										</span>
+
+										<div class="step__add-select step__add-mini">
+											<select class="select new-select">
+												<option value="1">km</option>
+												<option value="2">m</option>
+											</select>
+										</div>
+									</div>
+									<div class="step__add-field step__add-flex mr-11">
+										<input type="text" class="input-field" maxlength="80" required>
+										<span class="input-title">кафе / ресторан
+										</span>
+
+										<div class="step__add-select step__add-mini">
+											<select class="select new-select">
+												<option value="1">km</option>
+												<option value="2">m</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="step__add-row">
+									<div class="step__add-field step__add-flex mr-11">
+										<input type="text" class="input-field" maxlength="80" required>
+										<span class="input-title">марина для яхт
+										</span>
+										
+										<div class="step__add-select step__add-mini">
+											<select class="select new-select">
+												<option value="1">km</option>
+												<option value="2">m</option>
+											</select>
+										</div>
+									</div>
+									<div class="step__add-field step__add-flex mr-11">
+										<input type="text" class="input-field" maxlength="80" required>
+										<span class="input-title">поле для гольфа
+										</span>
+
+										<div class="step__add-select step__add-mini">
+											<select class="select new-select">
+												<option value="1">km</option>
+												<option value="2">m</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="step__add-item mt-2">
+							<div class="step__body-title">ОСНАЩЕНИЕ:</div>
+
+							<div class="step__add-block">
+								<div class="step__add-territory">
+									<div class="territory-column">
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Умный дом
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Мягкая мебель
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Сантехника
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Цифровая техника
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Бытовая техника
+											</span>
+										</label>
+									</div>
+									<div class="territory-column">
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Кондиционер
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Охранная сигнализация
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Натуральное дерево
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Тонированные окна
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Французские окна
+											</span>
+										</label>
+									</div>
+									<div class="territory-column">
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Бронированная дверь
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Полы с подогревом
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Солнечные батареи
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Камин
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Джакузи
+											</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="step__add-item mt-2">
+							<div class="step__body-title">тэги:</div>
+
+							<div class="step__add-block">
+								<div class="step__add-territory">
+									<div class="territory-column">
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Аукционная 
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Инвестиция
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Высокий доход
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Горячая цена
+											</span>
+										</label>
+									</div>
+									<div class="territory-column">
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Рассрочка 0%
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Аренда с выкупом
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												За биткоин
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												ВНЖ
+											</span>
+										</label>
+									</div>
+									<div class="territory-column">
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Гражданство
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Дистанционно
+											</span>
+										</label>
+										<label class="territory-label">
+											<input type="checkbox" class="territory-input">
+											<span class="custom">
+												{{Icon iconName="true"}}
+											</span>
+											<span class="territory-text">
+												Приватная / nda 
+											</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="terms-submit">
+							<div class="terms-submit-check">
+
+							</div>
+							<div class="terms-submit-row">
+								<div class="step-pag">
+									<span class="step-page">3</span>
+									/
+									<span class="step-value">6 шагов</span>
+								</div>
+								<button data-src="/step3.html" class="step-btn">
+									Далее
+									{{Icon iconName="n-arr"}}
+								</button>
+							</div>
+						</div>
+
+
+					</form>
+
+					<footer class="footer">
+						<div class="wrapper">
+							<div class="footer__items">
+								{{> footer/footer-center}}
+							</div>
+						</div>
+					</footer>
+					
+				</div>
+
+				{{> header/header-right-auth }}
+			</div>
+		</div>
+	</header>
+
+	{{> bottom/bottom }}
+</body>
+
+</html>
